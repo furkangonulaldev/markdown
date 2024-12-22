@@ -1,66 +1,89 @@
-<table>
-  <thead>
-    <tr>
-      <th>Markdown Syntax</th>
-      <th>Description</th>
-      <th>HTML Equivalent</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code># Heading 1</code></td>
-      <td>Creates a top-level heading</td>
-      <td><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>## Heading 2</code></td>
-      <td>Creates a second-level heading</td>
-      <td><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>**bold text**</code></td>
-      <td>Makes text bold</td>
-      <td><code>&lt;strong&gt;bold text&lt;/strong&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>*italic text*</code></td>
-      <td>Makes text italic</td>
-      <td><code>&lt;em&gt;italic text&lt;/em&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>- List item</code></td>
-      <td>Creates a bullet point list</td>
-      <td><code>&lt;ul&gt;&lt;li&gt;List item&lt;/li&gt;&lt;/ul&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>1. List item</code></td>
-      <td>Creates an ordered list</td>
-      <td><code>&lt;ol&gt;&lt;li&gt;List item&lt;/li&gt;&lt;/ol&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>[Link Text](http://...)</code></td>
-      <td>Creates a hyperlink</td>
-      <td><code>&lt;a href="http://..."&gt;Link Text&lt;/a&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>![Image](image.jpg)</code></td>
-      <td>Embeds an image</td>
-      <td><code>&lt;img src="image.jpg" /&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>> Blockquote</code></td>
-      <td>Creates a blockquote</td>
-      <td><code>&lt;blockquote&gt;Blockquote&lt;/blockquote&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>`` Inline code ``</code></td>
-      <td>Displays inline code</td>
-      <td><code>&lt;code&gt;Inline code&lt;/code&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code> ``` Code block ``` </code></td>
-      <td>Displays a code block</td>
-      <td><code>&lt;pre&gt;&lt;code&gt;Code block&lt;/code&gt;&lt;/pre&gt;</code></td>
-    </tr>
-  </tbody>
-</table>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Syntax Table</title>
+  <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.js"></script>
+  <style>
+    body {
+      background-color: #f9fafb;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="p-6">
+
+  <h1 class="text-3xl font-semibold text-center mb-6 text-gray-800">Markdown Syntax and HTML Equivalents</h1>
+
+  <div class="overflow-x-auto">
+    <table class="min-w-full bg-white border border-gray-300 rounded-lg shadow-lg">
+      <thead>
+        <tr class="bg-gray-200 text-left">
+          <th class="px-4 py-3 text-sm font-medium text-gray-700">Markdown Syntax</th>
+          <th class="px-4 py-3 text-sm font-medium text-gray-700">Description</th>
+          <th class="px-4 py-3 text-sm font-medium text-gray-700">HTML Equivalent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code># Heading 1</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Creates a top-level heading</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>## Heading 2</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Creates a second-level heading</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>**bold text**</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Makes text bold</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;strong&gt;bold text&lt;/strong&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>*italic text*</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Makes text italic</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;em&gt;italic text&lt;/em&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>- List item</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Creates a bullet point list</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;ul&gt;&lt;li&gt;List item&lt;/li&gt;&lt;/ul&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>1. List item</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Creates an ordered list</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;ol&gt;&lt;li&gt;List item&lt;/li&gt;&lt;/ol&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>[Link Text](http://...)</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Creates a hyperlink</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;a href="http://..."&gt;Link Text&lt;/a&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>![Image](image.jpg)</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Embeds an image</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;img src="image.jpg" /&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>> Blockquote</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Creates a blockquote</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;blockquote&gt;Blockquote&lt;/blockquote&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>`` Inline code ``</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Displays inline code</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;code&gt;Inline code&lt;/code&gt;</code></td>
+        </tr>
+        <tr class="border-t border-gray-200">
+          <td class="px-4 py-3 text-sm text-gray-800"><code>``` Code block ```</code></td>
+          <td class="px-4 py-3 text-sm text-gray-600">Displays a code block</td>
+          <td class="px-4 py-3 text-sm text-gray-600"><code>&lt;pre&gt;&lt;code&gt;Code block&lt;/code&gt;&lt;/pre&gt;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
